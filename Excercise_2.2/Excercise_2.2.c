@@ -9,7 +9,8 @@
 
 #include <stdio.h>
 #define MAXLINE 1000 /* maximum size of line */
-int getline(char linef[], int );
+
+int gotline(char linef[], int );
 void copy(char to[], char fromf[]);
 
 /* printing the longest line */
@@ -21,7 +22,7 @@ main()
     char longest[MAXLINE]; /* the longest line */
     max = 0;
 
-    while ((len = getline(line, MAXLINE)) > 0)
+    while ((len = gotline(line, MAXLINE)) > 0)
         if (len > max) {
             max = len;
             copy(longest, line);
@@ -34,14 +35,15 @@ main()
 
 
 /* getline: reads a line of s, returns length */
-int getline(char s[], int lim)
+int gotline(char s[], int lim)
 {
-    int c, i;
+    int  c,i;
+
 
     /*this is a part we need to change */
     for (i = 0; i < lim-1; ++i)
         if((c = getchar()) != EOF) /*we can check "for" conditions using "if-then-else"*/
-            if(с != '\n')/*If condition is false, we use "break"*/
+            if(c != '\n')/*If condition is false, we use "break"*/
                 s[i] = c;
             else break;
         else break;
