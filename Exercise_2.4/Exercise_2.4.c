@@ -8,12 +8,12 @@ void squeeze(char s1[],char s2[]);
 
 void squeeze(char s1[],char s2[]){
     char symb;
-    for(i = 0; i <= strlen(s2); i++ ) {
+    for(int i = 0; i <= strlen(s2); i++ ) {
         symb = s2[i];
         int k, j;
         for (k = j = 0; k <= strlen(s1); k++) {
             if (s1[k] != symb)/*if current symbol is different from "symb", leave it in the line*/
-                s1[j++] = s[k];
+                s1[j++] = s1[k];
         }
     }
 }
