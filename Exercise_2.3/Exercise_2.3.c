@@ -15,7 +15,7 @@ int main(){
     c[0] = 0;
     c[1] = "X";
     printf("Write a hexadecimal number(0..9,A..F or a..f) \n");
-    for(int i = 2;i < MAXSIZE + 2 || c[i] != " " || c[i] != "\n";i++){
+    for(int i = 2;i < MAXSIZE + 2 || c[i] != " " || c[i] != "\0";i++){
         c[i] = (char *) getchar();
     }
 
