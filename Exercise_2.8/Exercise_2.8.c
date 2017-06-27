@@ -1,4 +1,4 @@
-/*Exercise 2.7 from K&R*/
+/*Exercise 2.8 from K&R*/
 /* Write function rightrot(х, n) which cyclically moves "x" to the right by the "n" digits */
 
 unsigned rightrot(unsigned x, int n);
