@@ -14,7 +14,7 @@ int gotline(char linef[], int );
 void copy(char to[], char fromf[]);
 
 /* printing the longest line */
-main()
+int main()
 {
     int len; /* current line's length */
     int max; /* max length */
