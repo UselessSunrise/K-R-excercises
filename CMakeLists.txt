@@ -26,6 +26,8 @@ add_subdirectory(Exercise_4.5)
 add_subdirectory(Exercise_4.6)
 add_subdirectory(Exercise_4.7)
 add_subdirectory(Exercise_4.8)
+add_subdirectory(Exercise_4.9)
+add_subdirectory(Exercise_4.10)
 set(SOURCE_FILES main.c main.h Exercise_2.10/Exercise_2.10.c Exercise_3.1/Exercise_3.1.c Exercise_3.2/Exercise_3.2.c Exercise_3.3/Exercise_3.3.c Exercise_4.1/Exercise_4.1.c Exercise_4.3/Exercise_4.3.c Exercise_4.4/Exercise_4.4.c)
 
 add_executable(main.c ${SOURCE_FILES})
